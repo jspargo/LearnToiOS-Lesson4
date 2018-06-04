@@ -161,6 +161,9 @@
                         <viewLayoutGuide key="safeArea" id="5Xh-ZA-Uoi"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="ZQD-qs-a4t" appends="YES" id="lYs-8u-rWe"/>
+                            <outletCollection property="gestureRecognizers" destination="UCX-r3-9Tq" appends="YES" id="Chc-mB-xQi"/>
+                            <outletCollection property="gestureRecognizers" destination="NLb-lu-nja" appends="YES" id="sHF-yT-f0V"/>
+                            <outletCollection property="gestureRecognizers" destination="X17-XK-7Vs" appends="YES" id="CfO-Wq-Wz8"/>
                         </connections>
                     </view>
                     <connections>
@@ -168,11 +171,29 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8L-6i-50O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="X17-XK-7Vs">
+                    <connections>
+                        <action selector="didRecogniseLongPress:" destination="8Dd-qj-Ted" id="9Uv-eg-sAR"/>
+                        <outlet property="delegate" destination="8Dd-qj-Ted" id="1Hm-o2-TE6"/>
+                    </connections>
+                </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="ZQD-qs-a4t">
                     <connections>
                         <action selector="didRecogniseSwipe:" destination="8Dd-qj-Ted" id="XDG-He-tBi"/>
+                        <outlet property="delegate" destination="8Dd-qj-Ted" id="2BR-zX-NJD"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <rotationGestureRecognizer id="NLb-lu-nja">
+                    <connections>
+                        <action selector="didRecogniseRotation:" destination="8Dd-qj-Ted" id="mHC-qB-S5N"/>
+                        <outlet property="delegate" destination="8Dd-qj-Ted" id="TJl-qt-q6i"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="UCX-r3-9Tq">
+                    <connections>
+                        <action selector="didRecognisePinch:" destination="8Dd-qj-Ted" id="BFq-TC-xy9"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3009" y="440"/>
         </scene>
