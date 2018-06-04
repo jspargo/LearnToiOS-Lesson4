@@ -35,5 +35,14 @@ class ViewController: UITableViewController {
     return cell
   }
 
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let destinationVC = segue.destination as? DetailViewController,
+      let cell = sender as? UITableViewCell {
+      if let indexPath = tableView.indexPath(for: cell) {
+        destinationVC.selectedIndexPath = indexPath
+      }
+    }
+
+  }
 }
 
