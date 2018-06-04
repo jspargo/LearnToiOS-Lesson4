@@ -15,6 +15,7 @@
 		DB91973120C5798100DDD57F /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91973020C5798100DDD57F /* ModelController.swift */; };
 		DB91973720C5EC5100DDD57F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91973620C5EC5100DDD57F /* DetailViewController.swift */; };
 		DB91973920C5F01200DDD57F /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91973820C5F01200DDD57F /* AvatarViewController.swift */; };
+		DB91973B20C5F5F300DDD57F /* RecentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91973A20C5F5F300DDD57F /* RecentsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DB91973020C5798100DDD57F /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		DB91973620C5EC5100DDD57F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DB91973820C5F01200DDD57F /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		DB91973A20C5F5F300DDD57F /* RecentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DB91972E20C5792F00DDD57F /* Resources */,
 				DB91971E20C5789A00DDD57F /* ViewController.swift */,
 				DB91972020C5789A00DDD57F /* Main.storyboard */,
+				DB91973A20C5F5F300DDD57F /* RecentsTableViewController.swift */,
 				DB91973820C5F01200DDD57F /* AvatarViewController.swift */,
 				DB91973620C5EC5100DDD57F /* DetailViewController.swift */,
 			);
@@ -162,6 +165,7 @@
 			files = (
 				DB91973920C5F01200DDD57F /* AvatarViewController.swift in Sources */,
 				DB91973120C5798100DDD57F /* ModelController.swift in Sources */,
+				DB91973B20C5F5F300DDD57F /* RecentsTableViewController.swift in Sources */,
 				DB91971F20C5789A00DDD57F /* ViewController.swift in Sources */,
 				DB91971D20C5789A00DDD57F /* AppDelegate.swift in Sources */,
 				DB91973720C5EC5100DDD57F /* DetailViewController.swift in Sources */,

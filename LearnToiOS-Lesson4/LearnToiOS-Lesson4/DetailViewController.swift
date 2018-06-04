@@ -23,7 +23,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     if let indexPath = selectedIndexPath {
-      self.titleLabel.text = modelController.nameOfItem(at: indexPath.row)
+      let name = modelController.nameOfItem(at: indexPath.row)
+      self.title = name
+      self.titleLabel.text = name
       self.descriptionLabel.text = modelController.descriptionOfItem(at: indexPath.row)
       self.urlLabel.text = modelController.urlStringOfItem(at: indexPath.row)
       self.sourceTypeLabel.text = modelController.isPrivateItem(at: indexPath.row) ? "Closed Source" : " OpenSource"

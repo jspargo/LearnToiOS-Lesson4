@@ -36,13 +36,28 @@ class ViewController: UITableViewController {
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
     if let destinationVC = segue.destination as? DetailViewController,
       let cell = sender as? UITableViewCell {
+      
       if let indexPath = tableView.indexPath(for: cell) {
-        destinationVC.selectedIndexPath = indexPath
+        
+        let selectedIndexPath: IndexPath
+        
+        if let _ = segue.source as? RecentsTableViewController {
+          selectedIndexPath = modelController.recentItemsIndexPath(for: indexPath)
+          
+        } else if let _ = segue.source as? ViewController {
+          selectedIndexPath = indexPath
+          
+        } else {
+          selectedIndexPath = IndexPath(item: 0, section: 0)
+        }
+        
+        modelController.addRecent(for: selectedIndexPath.row)
+        destinationVC.selectedIndexPath = selectedIndexPath
       }
     }
-
   }
 }
 
