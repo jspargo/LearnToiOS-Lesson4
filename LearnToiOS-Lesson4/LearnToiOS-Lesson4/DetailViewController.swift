@@ -31,7 +31,20 @@ class DetailViewController: UIViewController {
       modelController.loadAvatarImageOfItem(at: indexPath.row) { (image, _) in
         self.avatarImageView.image = image
       }
-      
     }
   }
+  
+  @IBAction func didRecogniseTap(_ sender: UITapGestureRecognizer) {
+    
+    performSegue(withIdentifier: "showAvatar", sender: nil)
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    if let destinationVC = segue.destination as? AvatarViewController {
+      
+      destinationVC.selectedIndexPath = selectedIndexPath
+    }
+  }
+  
 }

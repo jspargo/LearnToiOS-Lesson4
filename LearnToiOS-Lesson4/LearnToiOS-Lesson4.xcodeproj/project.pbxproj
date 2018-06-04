@@ -14,6 +14,7 @@
 		DB91972720C5789C00DDD57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB91972520C5789C00DDD57F /* LaunchScreen.storyboard */; };
 		DB91973120C5798100DDD57F /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91973020C5798100DDD57F /* ModelController.swift */; };
 		DB91973720C5EC5100DDD57F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91973620C5EC5100DDD57F /* DetailViewController.swift */; };
+		DB91973920C5F01200DDD57F /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB91973820C5F01200DDD57F /* AvatarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DB91972820C5789C00DDD57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB91973020C5798100DDD57F /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		DB91973620C5EC5100DDD57F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DB91973820C5F01200DDD57F /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				DB91972E20C5792F00DDD57F /* Resources */,
 				DB91971E20C5789A00DDD57F /* ViewController.swift */,
 				DB91972020C5789A00DDD57F /* Main.storyboard */,
+				DB91973820C5F01200DDD57F /* AvatarViewController.swift */,
 				DB91973620C5EC5100DDD57F /* DetailViewController.swift */,
 			);
 			path = "LearnToiOS-Lesson4";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB91973920C5F01200DDD57F /* AvatarViewController.swift in Sources */,
 				DB91973120C5798100DDD57F /* ModelController.swift in Sources */,
 				DB91971F20C5789A00DDD57F /* ViewController.swift in Sources */,
 				DB91971D20C5789A00DDD57F /* AppDelegate.swift in Sources */,
